@@ -1,0 +1,9 @@
+<p>
+  {{category.name}}
+</p>
+
+<ul class="items">
+  <li *ngFor="let item of items">
+    <a routerLink="/items/{{item.id}}-{{item.name}}">{{item.name}}</a>
+  </li>
+</ul>
